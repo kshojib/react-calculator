@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.calculatorBody{
+  display: flex;
+  max-width: 400px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 10px 20px;
+  color: #fff;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  background: #000;
+}
+.calculatoritem{
+  flex-basis: calc( 24%  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.calculatoritem span{
+  cursor: pointer;
+  background: #1f1b1b;
+  flex-basis: 100%;
+  max-width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.result{
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.result:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 420px;
+  height: 1px;
+  background: #5a5858;
+  margin: auto;
+  left: -10px;
+}
+.calculatoritem.clear{
+  flex-basis: 100%;
+  justify-content: flex-end;
+  margin-right: 15px;
+  color: #ee6c6c;
+  text-transform: uppercase;
+}
+.calculatoritem.equal span{
+  background: green;
+}
+.text-green{
+  color: green;
+  font-size: 30px;
+}
