@@ -2,6 +2,9 @@
 
 A simple Calculator created with React.js
 
+![alt text](https://github.com/sjbkhan13/react-calculator/blob/master/public/screenshot.png?raw=true)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
